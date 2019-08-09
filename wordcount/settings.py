@@ -23,12 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'v7=0n)(xvvc56^^^d=-wo8_ft4)r0ge&w)lc3@vk&u^18q=c!r'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = bool(int(os.environ.get('DEBUG', 1)))
+DEBUG = True
 
-ALLOWED_HOSTS = [
-    'ec2-3-15-24-79.us-east-2.compute.amazonaws.com',
-    '127.0.0.1'
-]
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -121,4 +118,3 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = 'static/'
